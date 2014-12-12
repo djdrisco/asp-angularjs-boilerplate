@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+<!-- angular.js here-->
+<!-- Note could also use Register Bundle functionality instead of using script tag using script tag for easier readability-->
+<script src="../../Scripts/angular.js" type="text/javascript">
+
+</script> 
+@RenderSection("scripts", required:false)
+
+</body>
+</html>
